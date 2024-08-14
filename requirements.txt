@@ -1,0 +1,12 @@
+tensorflow
+matplotlib
+pandas
+numpy
+keras
+keras.models
+Keras-Preprocessing
+keras.utils
+streamlit
+streamlit_option_menu
+pillow
+flask
