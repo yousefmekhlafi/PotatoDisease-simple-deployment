@@ -4,7 +4,7 @@ App status: FUNCTIONAL: tested on postman and streamlit
 
 # Description
 
-This is a deep learning classification app for detecting a potato plant disease. The DL algorithm classifies potato leaves into 3 different classes: healthy, early blight, late blight.
+This is a deep learning classification app for detecting a potato plant disease. The DL algorithm classifies potato leaves into 3 different classes: healthy, early blight or late blight.
 
 
 # Disclaimers
