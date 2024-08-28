@@ -43,7 +43,7 @@ Project video: https://www.youtube.com/watch?v=2s-tmKc3gKw&list=PLPbgcxheSpE1gl5
 
 4. type in command "streamlit run app.py" on terminal
 
-Option 2: 
+# Option 2: 
 Use cloud services for containerization and deployment using your own resources
 
 
