@@ -1,42 +1,67 @@
-App status: FUNCTIONAL
+# Potato Leaf Disease Classification (Simple Deployment)
 
-Tested on postman and streamlit
+App status: FUNCTIONAL: tested on postman and streamlit
 
-How to run:
+# Description
 
-Option 1: 
-Fork repository and run on VS code
-type in command "streamlit run app.py" on CMD terminal
+This is a deep learning classification app for detecting a potato plant disease. The DL algorithm classifies potato leaves into 3 different classes: healthy, early blight, late blight.
 
-Option 2: 
-Use cloud services for containerizing and deployment using your own resources
 
-DESCRIPTION AND DISCALIMERS:
+# Disclaimers
 
-This is a deep learning multiple classification app for detecting a potato plant disease: a multiple classification algorithm for healthy, early, late classes.
-
-The deep learning algorithm was developed and coded along with Codebasics YT channel.
+The project's model was developed on a jupyter notebook externally with Codebasics YT Channel, but the packaging and deployment is personal effort
 
 ChatGPT was thoroughly used for learning and assisting purposes. 
 
-PROJECT SCOPE AND METHODOLOGY: 
+Project video: https://www.youtube.com/watch?v=2s-tmKc3gKw&list=PLPbgcxheSpE1gl5WkrwtmRiCwiGMM8NdH&index=3&pp=iAQB
 
-note: the entirety of the project was made in a virtual environment on VS code.
 
-1. Learning and practicing python and deep learning 
+# Project Scope and Goals
 
-2. Learn how to develop a deep learning multiple class classifier on a jupyter notebook and save the model
+1. Learn Python
+2. Learn deep learning
+3. Learn computer vision
+4. Learn how to process and work with image data
+5. Learn how to deploy models in a simple workflow and web framework  
 
-3. Learning the OOP aspects of python (functions and importing functions for re-usable code)
 
-4. Make a habit of working on a simple jupyter notebook experiment, and using a simple project structure first. Then turn the code into industry standard stage-based modular coding for production grade later.
+# How to Run
 
-5. Learn how to prepare and process input data (images) for a deep learning model's acceptable input parameters 
+# Option 1: On your local machine 
 
-6. Learn how to make a prediction script for loading the model into the app
+1. Clone this repository and run on VS code
+2. Create a virtual environment:
 
-7. Learn how to package the model into a deployable package
+"git clone https://github.com/yousefmekhlafi/PotatoDisease-simple-deployment"
 
-8. Learn how to deploy the model locally via streamlit in a simple manner 
+2. Activate virtual environment
+"conda activate potato-simple-5"
 
-9. Learn how to dockerize the project for deployment on cloud services (Azure, AWS, GCP)
+3. install requirements.txt
+
+"pip install -r requirements.txt"
+
+4. type in command "streamlit run app.py" on terminal
+
+Option 2: 
+Use cloud services for containerization and deployment using your own resources
+
+
+
+# Project Methodology  
+
+1. Entirety of experiment and model training was done in a jupyter notebook first
+
+Step 1: the image dataset was processed into a tensorflow dataset
+
+Step 2: The data was augmented as well due to the limited size of the dataset
+
+Step 3: The model was trained with a CNN and saved in .h5 format
+
+Step 4: The model loss function and accuracy were plotted for overfitting detection
+
+2. Created an image processing py file for processing input images for predictions
+
+3. Created a predictions py file that loads the model and runs the prediction function on input data
+
+4. Created a streamlit app for running these py in a simple drag/drop or upload-file UI
